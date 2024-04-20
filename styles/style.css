@@ -28,13 +28,22 @@ html, body {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+header img {
+    margin-top: 15px;
+}
+
+span#burguer {
+    cursor: pointer;
 }
 
 ul {
-    display: flex;
+    display: none;
+    /* display: flex;
     flex-direction: row;
-    list-style-type: none;
+    list-style-type: none; */
 }
 
 ul li {
