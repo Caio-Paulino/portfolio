@@ -11,8 +11,7 @@
 <body>
     <header>
         <img src="#" alt="logo">
-        <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span>
-        <nav>
+        <nav id="itens">
             <ul>
                 <li>Início</li>
                 <li>Sobre mim</li>
@@ -20,6 +19,7 @@
                 <li>Habilidades</li>
             </ul>
         </nav>
+        <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span>
     </header>
     <main>
         <div class="inicio">
@@ -27,8 +27,10 @@
             <h1>Caio Paulino</h1>
             <p>Desenvolvedor Front-end</p>
             <img src="#" alt="Foto pessoal">
-            <img src="" alt="logo-linkedin">
-            <img src="" alt="logo-github">
+            <section class="redes-sociais">
+                <img src="images/logo-linkedin.png" alt="logo linkedin">
+                <img src="images/logo-github.png" alt="logo github">
+            </section>
         </div>
         <div class="sobre">
             <img src="" alt="">
@@ -48,5 +50,6 @@
         </div>
     </main>
     <footer></footer>
+    <script src="main.js"></script>
 </body>
 </html>
