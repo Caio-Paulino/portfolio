@@ -1,12 +1,14 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Configurações gerais */
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
-
     padding: 0;
     margin:0;
+    box-sizing: border-box;
+
+    font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -14,40 +16,67 @@
     --vermelho: #BF1736;
     --cinza-claro: #BFBFBD;
     --cinza: #8C8C8B;
-    --preto: #0D0D0D;
+    --preto: #191919;
+    --preto-alternativo: #252424;
 }
-
-
 
 html, body {
     background-color: var(--preto);
     color: white;
+    height: 100vh;  
     width: 100vw;
-    height: 100vh;
+    
+    overflow-x: hidden;
+    line-height: 1.15;
 }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    letter-spacing: 0.06rem;
+}
+
+p {
+    /* line-height: 25px; */
+    padding: 0.5em 0;
+    font-size: 1.1em;
+}
+
+section {
+    min-height: 100vh;
+}
+
+/* Header */
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: var(--preto);
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+    z-index: 100;
 }
 
-header img {
-    margin-top: 15px;
+header a {
+  text-decoration: none;
+  color: white;
+  padding: 12px;
+  transition: .3s;
+}
+
+header a:hover {
+    color: var(--vermelho);
+    
 }
 
 nav {
     display: none;
 }
 
-span#burguer {
-    cursor: pointer;
-    padding: 16px;
-    display: block;
-}
-
 ul {
-    list-style-type: none;
     display: flex;
     flex-direction: column;
     list-style-type: none;
@@ -56,12 +85,311 @@ ul {
 
 ul li {
     padding: 15px;
+    font-size: 1.1rem;
 }
 
-section.redes-sociais img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    border: 1px solid black;
+#logo {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
 }
 
+/* Section Início */
+
+section.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 30px 20px; */
+}
+
+.col-a {
+  width: 50vw;
+}
+
+.inicio h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.inicio h1 {
+    font-weight: bold;
+    font-size: 3.8rem;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+div.logo img {
+    width: 100px;
+    height: 80px;
+    margin-left: 20px;
+}
+
+span#burguer {
+    cursor: pointer;
+    padding: 16px;
+    display: block;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    width: 4rem;
+    height: 4rem;
+    margin-top: 40px;   
+    border: .2rem solid var(--vermelho);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--vermelho);
+    transition: .5s;
+}
+
+.redes-sociais a:hover {
+    background: var(--vermelho);
+    color: var(--preto-alternativo);
+    box-shadow: 0 0 1rem var(--vermelho);
+}
+
+span {
+  color: var(--vermelho); 
+}
+
+/* Section Sobre */
+
+section.sobre {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    gap: 50px;
+    background-color: var(--preto-alternativo);
+}
+
+.texto-sobre {
+    width: 40vw;
+}
+
+.texto-sobre h2 {
+    padding-top: 20px;
+}
+
+.texto-sobre p {
+    padding: 18px 0px;
+    text-align: justify;
+}
+
+.foto-sobre img {
+    width: 35vw;
+    border-radius: 50%;
+}
+
+/* Section Projetos */
+
+.projetos h2 {
+    text-align: center;
+    padding: 16px 0px;
+}
+
+.container-projetos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container-projetos section {
+    padding: 24px 18px;
+}
+
+/* Section Habilidades */
+
+.habilidades h2 {
+    text-align: center;
+    padding: 24px 0px;
+}
+
+.habilidades article {
+    display: flex;
+    gap: 30px;
+    margin: 10px 30px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+}
+
+#foto-pessoal {
+    width: 600px;
+    height: 600px;
+}
+
+/* glitch */
+
+.glitch {
+  color: white;
+  font-size: 80px;
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+@keyframes noise-anim {
+    0% {
+      clip: rect(53px, 9999px, 17px, 0);
+    }
+    5% {
+      clip: rect(57px, 9999px, 30px, 0);
+    }
+    10% {
+      clip: rect(72px, 9999px, 52px, 0);
+    }
+    15% {
+      clip: rect(46px, 9999px, 41px, 0);
+    }
+    20% {
+      clip: rect(46px, 9999px, 44px, 0);
+    }
+    25% {
+      clip: rect(43px, 9999px, 13px, 0);
+    }
+    30% {
+      clip: rect(97px, 9999px, 17px, 0);
+    }
+    35% {
+      clip: rect(53px, 9999px, 7px, 0);
+    }
+    40% {
+      clip: rect(81px, 9999px, 49px, 0);
+    }
+    45% {
+      clip: rect(1px, 9999px, 9px, 0);
+    }
+    50% {
+      clip: rect(1px, 9999px, 66px, 0);
+    }
+    55% {
+      clip: rect(19px, 9999px, 70px, 0);
+    }
+    60% {
+      clip: rect(38px, 9999px, 36px, 0);
+    }
+    65% {
+      clip: rect(16px, 9999px, 83px, 0);
+    }
+    70% {
+      clip: rect(1px, 9999px, 63px, 0);
+    }
+    75% {
+      clip: rect(46px, 9999px, 85px, 0);
+    }
+    80% {
+      clip: rect(81px, 9999px, 98px, 0);
+    }
+    85% {
+      clip: rect(60px, 9999px, 100px, 0);
+    }
+    90% {
+      clip: rect(67px, 9999px, 84px, 0);
+    }
+    95% {
+      clip: rect(52px, 9999px, 35px, 0);
+    }
+    100% {
+      clip: rect(78px, 9999px, 61px, 0);
+    }
+  }
+  .glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -1px 0 red;
+    top: 0;
+    color: white;
+    background: var(--preto);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 2s infinite linear alternate-reverse;
+  }
+  
+  @keyframes noise-anim-2 {
+    0% {
+      clip: rect(58px, 9999px, 92px, 0);
+    }
+    5% {
+      clip: rect(8px, 9999px, 31px, 0);
+    }
+    10% {
+      clip: rect(89px, 9999px, 18px, 0);
+    }
+    15% {
+      clip: rect(100px, 9999px, 86px, 0);
+    }
+    20% {
+      clip: rect(85px, 9999px, 93px, 0);
+    }
+    25% {
+      clip: rect(82px, 9999px, 91px, 0);
+    }
+    30% {
+      clip: rect(88px, 9999px, 68px, 0);
+    }
+    35% {
+      clip: rect(84px, 9999px, 79px, 0);
+    }
+    40% {
+      clip: rect(6px, 9999px, 80px, 0);
+    }
+    45% {
+      clip: rect(47px, 9999px, 83px, 0);
+    }
+    50% {
+      clip: rect(84px, 9999px, 91px, 0);
+    }
+    55% {
+      clip: rect(39px, 9999px, 24px, 0);
+    }
+    60% {
+      clip: rect(34px, 9999px, 40px, 0);
+    }
+    65% {
+      clip: rect(21px, 9999px, 29px, 0);
+    }
+    70% {
+      clip: rect(57px, 9999px, 74px, 0);
+    }
+    75% {
+      clip: rect(8px, 9999px, 51px, 0);
+    }
+    80% {
+      clip: rect(43px, 9999px, 64px, 0);
+    }
+    85% {
+      clip: rect(53px, 9999px, 63px, 0);
+    }
+    90% {
+      clip: rect(14px, 9999px, 98px, 0);
+    }
+    95% {
+      clip: rect(60px, 9999px, 78px, 0);
+    }
+    100% {
+      clip: rect(57px, 9999px, 92px, 0);
+    }
+  }
+  .glitch:before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 1px 0 blue;
+    top: 0;
+    color: white;
+    background: var(--preto);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+  }
