@@ -190,28 +190,73 @@ section.sobre {
 
 /* Section Projetos */
 
+.projetos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .projetos h2 {
     font-size: 2.3rem;
-    text-align: center;
-    padding: 16px 0px;
+    padding: 2rem 0;
 }
 
 .container-projetos {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.container-projetos section {
-    padding: 24px 18px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
 }
 
 .projeto {
   background-color: var(--preto-alternativo);
-  width: 25vw;
+  width: 45vw;
   padding: 32px;
   border-radius: 20px;
   margin-top: 20px;
+  transition: .5s ease;
+}
+
+.projeto:hover {
+    border: 1px solid var(--vermelho);
+    transform: scale(1.02);
+}
+
+.projeto img {
+  width: 100%;
+  height: 250px;
+  border-radius: 25px;
+  background-position: cover;
+}
+
+.projeto h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.projeto .descricao {
+    padding: 1rem 0;
+}
+
+.projeto .tecnologias {
+    color: var(--vermelho);
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 4rem;
+    background-color: var(--vermelho);
+    color: var(--preto-alternativo);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: .5s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 0 1rem var(--vermelho);
 }
 
 /* Section Habilidades */

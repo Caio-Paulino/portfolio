@@ -14,8 +14,9 @@
         font-weight: bolder;    
     }
 
-    a {
+    .redes-sociais a {
         margin: 0 20px;
+        margin-top: 25px;
     }
 
 
