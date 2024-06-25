@@ -21,30 +21,30 @@
         </div>
         <nav id="itens">
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Habilidades</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
             </ul>
         </nav>
         <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span>
     </header>
     <main>
-        <section class="inicio">
+        <section class="inicio" id="inicio">
                     <div class="col-a">
                         <h3>Olá, eu sou</h3>
-                        <h1 data-text="CaioPaulino">Caio Paulino</h1>
-                        <h3><span>Desenvolvedor Front-end</span></h3>
+                        <h1>Caio Paulino</h1>
+                        <h3><span>Desenvolvedor Full Stack</span></h3>
                         <div class="redes-sociais">
                             <a href="https://www.linkedin.com/in/caio-henrique-paulino/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
                             <a href="https://github.com/Caio-Paulino" target="_blank"><i class='bx bxl-github'></i></a>
                         </div>
                     </div>
                     <div class="col-b">
-                        <img id="foto-pessoal" src="images/tela-principal.png" alt="Foto pessoal">
+                        <img id="foto-pessoal" src="images/tela-principal-2.png" alt="Foto pessoal">
                     </div>                         
         </section>
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="foto-sobre">
                 <img src="images/foto-sobre.jpg" alt="foto pessoal">
             </div>
@@ -53,7 +53,7 @@
                 <p>Meu nome é Caio Paulino e meu primeiro contato com programação foi em 2019, no meu curso técnico de informática. Apesar de já ter interesse na área, ainda não dado a devida atenção a esse estudo. Somente em 2023, após entrar no curso de Análise e Desenvolvimento de Sistemas, passei a estudar com verdadeiro afinco para me tornar um programador.</p> <p>Atualmente estudando Java com Spring Boot e ReactJS, sou um desenvolvedor Full Stack e gosto de sempre estar aprendendo coisas novas.</p>
             </article>
         </section>    
-        <section class="projetos">
+        <section class="projetos" id="projetos">
             <h2>Projetos</h2>
             <div class="container-projetos">
                 <article id="blog-id" class="projeto">
@@ -86,37 +86,39 @@
                 </article>
             </div>
         </section>
-        <section class="habilidades">
+        <section class="habilidades" id="habilidades">
             <h2>Habilidades</h2>
             <article>
-                <img src="" alt="HTML, CSS e JavaScript">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla at eaque aliquam exercitationem nisi excepturi commodi. Perferendis dolor pariatur velit adipisci expedita officiis, blanditiis explicabo, quia officia tempore ut nobis?</p>
+                <img src="images/react-svgrepo-com.svg" class="logo-tecnologias" alt="ReactJS">
+                <p><span>ReactJS:</span> é uma biblioteca JavaScript de código aberto utilizada para construir interfaces de usuário, especialmente em aplicações web de página única. Criada pelo Facebook, ela permite a criação de componentes reutilizáveis e proporciona uma renderização eficiente e dinâmica da interface, resultando em uma experiência de usuário mais fluida.</p>
             </article>
             <article>
-                <img src="" alt="React JS">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla at eaque aliquam exercitationem nisi excepturi commodi. Perferendis dolor pariatur velit adipisci expedita officiis, blanditiis explicabo, quia officia tempore ut nobis?</p>
+                <img src="images/java-svgrepo-com.svg" class="logo-tecnologias" alt="Java">
+                <p><span>Java:</span> é uma linguagem de programação orientada a objetos, conhecida por sua portabilidade e desempenho. Utilizada em uma ampla gama de aplicações, desde desenvolvimento web até aplicativos móveis e sistemas corporativos, Java é robusta, segura e possui uma vasta comunidade de desenvolvedores e bibliotecas.</p>
             </article>
             <article>
-                <img src="" alt="Java">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla at eaque aliquam exercitationem nisi excepturi commodi. Perferendis dolor pariatur velit adipisci expedita officiis, blanditiis explicabo, quia officia tempore ut nobis?</p>
+                <img src="images/spring-svgrepo-com.svg" class="logo-tecnologias" alt="Spring Boot">
+                <p><span>Spring Boot:</span> é um framework Java que simplifica a criação de aplicações autônomas e prontas para produção. Ele oferece uma abordagem opinativa para configuração e permite que os desenvolvedores criem rapidamente serviços e aplicações web robustas e escaláveis, com uma configuração mínima.</p>
             </article>
             <article>
-                <img src="" alt="Spring Boot">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla at eaque aliquam exercitationem nisi excepturi commodi. Perferendis dolor pariatur velit adipisci expedita officiis, blanditiis explicabo, quia officia tempore ut nobis?</p>
+                <img src="images/git-svgrepo-com.svg" class="logo-tecnologias" alt="Git">
+                <p><span>Git:</span> é um sistema de controle de versão distribuído, amplamente utilizado para rastrear mudanças em arquivos de código-fonte durante o desenvolvimento de software. Ele permite que múltiplos desenvolvedores trabalhem simultaneamente em um projeto, facilita a colaboração e ajuda a gerenciar o histórico de versões de maneira eficiente.</p>
             </article>
             <article>
-                <img src="" alt="Git">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla at eaque aliquam exercitationem nisi excepturi commodi. Perferendis dolor pariatur velit adipisci expedita officiis, blanditiis explicabo, quia officia tempore ut nobis?</p>
-            </article>
-            <article>
-                <img src="" alt="MySQL">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla at eaque aliquam exercitationem nisi excepturi commodi. Perferendis dolor pariatur velit adipisci expedita officiis, blanditiis explicabo, quia officia tempore ut nobis?</p>
+                <img src="images/mysql-svgrepo-com.svg" class="logo-tecnologias" alt="MySQL">
+                <p><span>MySQL:</span> é um sistema de gerenciamento de banco de dados relacional de código aberto, utilizado para armazenar e gerenciar grandes volumes de dados. Reconhecido por sua velocidade, confiabilidade e facilidade de uso, é amplamente adotado em diversas aplicações web, desde pequenos projetos até grandes sistemas corporativos.</p>
             </article>
         </section>
     </main>
-    <footer>Desenvolvido por Caio Paulino</footer>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="main.js"></script>
+    <footer>
+        <div>
+            <p>Copyright &copy; 2024 por <a href="https://www.linkedin.com/in/caio-henrique-paulino/" target="_blank">Caio Paulino</a> | Todos os direitos reservados</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#inicio"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
     
 </body>
 </html>

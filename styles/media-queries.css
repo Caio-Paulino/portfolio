@@ -34,7 +34,7 @@
     section.inicio {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     
@@ -46,12 +46,11 @@
         align-items: center;
     }
 
-    div.col-b {
-        text-align: center;
-    }
+    
 /* 
     img#foto-pessoal {
         width: 500px;
         height: 500px;
     } */
+
 }
