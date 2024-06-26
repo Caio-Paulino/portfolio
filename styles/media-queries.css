@@ -2,55 +2,138 @@
 
 /* Tablet */
 
-@media (min-width:768px) {
+@media (max-width:768px) {
 
-    span#burguer {
-        display: none;
+    #burguer {
+        display: block;
+        width: 4rem;
     }
 
     header {
-        display: flex;
-        justify-content: space-around;
-        font-weight: bolder;    
+        justify-content: space-between;
     }
 
-    .redes-sociais a {
-        margin: 0 20px;
-        margin-top: 25px;
+    .navbar {
+        position: absolute; 
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        background: var(--preto);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     }
 
-
-
-    nav {
+    .navbar a {
         display: block;
+        font-size: 1.5rem;
+        margin: 3rem 0; 
     }
 
-
-    ul {
-        display: flex;
-        flex-direction: row;
+    section.inicio h1 {
+        font-size: 3rem;
     }
+
+    section.inicio h3 {
+        font-size: 1.4rem;
+    }
+
+    div.col-a {
+        padding: 0px;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .container-projetos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .projeto {
+        width: 60vw;
+    }   
+
+}
+
+@media (max-width:664px) {
+
+    
 
     section.inicio {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
     }
 
-    
- 
-    div.col-a {
-        padding-left: 32px;
+    .col-b {
+        width: 35vw;
+    }
+
+    section.sobre {
         display: flex;
+        flex-direction: column;
+    }
+
+    section.sobre h2 {
+        text-align: center;
+    }
+
+    .texto-sobre {
+        width: 75vw;
+    }
+
+    .projeto {
+        width: 70vw;
+    }  
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width:568px) {
+    
+    html {
+        font-size: 80%;
+    }
+    
+    .col-b {
+        width: 50vw;
+    }
+
+    .projeto {
+        width: 75vw;
+    } 
+}
+
+@media (max-width:500px) {
+
+    .projeto {
+        width: 85vw;
+    } 
+
+    .habilidades article {
         flex-direction: column;
         align-items: center;
     }
 
-    
-/* 
-    img#foto-pessoal {
-        width: 500px;
-        height: 500px;
-    } */
-
+    .habilidades article p {
+        font-size: 1.2rem;
+    }
 }
+
+@media (max-width:400px) {
+    html {
+        font-size: 60%;
+    }
+}
+
