@@ -5,35 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Caio Paulino</title>
     <link rel="shortcut icon" href="images/icone.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link rel="stylesheet" href="/styles/style.css">
-      <link rel="stylesheet" href="/styles/media-queries.css">
-      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/media-queries.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <img src="images/logo.png" 
-            id="logo"
-            alt="logo">
+            <a href="#inicio">
+                <img src="images/logo.png"
+                id="logo"
+                alt="logo">
+            </a>
         </div>
-        <nav id="itens" class="navbar">
+        <nav id="navbar-desktop" class="navbar">
                 <a href="#inicio" class="active">Início</a>
                 <a href="#sobre">Sobre</a>
                 <a href="#projetos">Projetos</a>
-                <a href="#habilidades">Habilidades</a>
-            
+                <a href="#habilidades">Habilidades</a>            
         </nav>
-        <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span>
-        <!-- <i class='bx bx-x'></i> -->
+        <div class="btn-abrir-menu" id="btn-menu">
+            <i class='bx bx-menu'></i>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar">
+                <i class='bx bx-x'></i>
+            </div>
+            <nav id="navbar-mobile" class="navbar">
+                <a href="#inicio" class="active">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#habilidades">Habilidades</a>            
+            </nav>
+        </div>
     </header>
     <main>
         <section class="inicio" id="inicio">
                     <div class="col-a">
                         <h3>Olá, eu sou</h3>
-                        <h1>Caio Paulino</h1>
+                        <h1 id="h1">Caio Paulino</h1>
                         <h3><span>Desenvolvedor Full Stack</span></h3>
                         <div class="redes-sociais">
                             <a href="https://www.linkedin.com/in/caio-henrique-paulino/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
@@ -51,6 +63,11 @@
             <article class="texto-sobre">
                 <h2>Sobre Mim</h2>
                 <p>Meu nome é Caio Paulino e meu primeiro contato com programação foi em 2019, no meu curso técnico de informática. Apesar de já ter interesse na área, ainda não dado a devida atenção a esse estudo. Somente em 2023, após entrar no curso de Análise e Desenvolvimento de Sistemas, passei a estudar com verdadeiro afinco para me tornar um programador.</p> <p>Atualmente estudando Java com Spring Boot e ReactJS, sou um desenvolvedor Full Stack e gosto de sempre estar aprendendo coisas novas.</p>
+                <div class="email">
+                    <i class='bx bxs-envelope'></i>
+                    <p><span>Email:</span> 10paulinhosilva10@gmail.com</p>
+                </div>
+                
             </article>
         </section>    
         <section class="projetos" id="projetos">
@@ -118,7 +135,7 @@
             <a href="#inicio"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
-    <script src="script.js"></script>
-    
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script> 
 </body>
 </html>

@@ -25,18 +25,17 @@ html, body {
     color: white;
     height: 100vh;  
     width: 100vw;
-    
-    overflow-x: hidden;
 }
 
 body {
     letter-spacing: 0.06rem;
+    overflow-x: hidden;
 }
 
 p {
     /* line-height: 25px; */
     padding: 0.5em 0;
-    font-size: 1.1em;
+    font-size: 1rem;
 }
 
 section {
@@ -46,11 +45,11 @@ section {
 /* Header */
 
 header {
-    position: fixed;
+    position: fixed; 
     top: 0;
     left: 0;
-    width: 100vw;
-    box-sizing: border-box;
+    width: 100%;
+    /* box-sizing: border-box; */
     background-color: var(--preto);
     display: flex;
     justify-content: space-around;
@@ -64,7 +63,7 @@ header.sticky {
 }
 
 header a {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-decoration: none;
   color: white;
   padding: 0 1.8rem;
@@ -82,8 +81,9 @@ header a.active {
   cursor: pointer;
 }
 
-#burguer {
-  display: none;
+.menu-mobile, 
+#btn-menu {
+    display: none;
 }
 
 /* Section Início */
@@ -110,7 +110,7 @@ div.col-a {
 }
 
 .inicio h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -169,7 +169,7 @@ section.sobre {
 }
 
 .texto-sobre h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     padding-top: 20px;
 }
 
@@ -177,6 +177,38 @@ section.sobre {
     padding: 18px 0 0 0px;
     text-align: justify;
     line-height: 1.3rem;
+}
+
+.texto-sobre .email {
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.texto-sobre .email i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    background-color: var(--vermelho);
+    border: .2rem solid var(--vermelho);
+    border-radius: 50%;
+    margin-right: .6rem;
+
+    box-shadow: 0 0 1rem var(--vermelho);
+    color: var(--preto-alternativo);
+    cursor: pointer;
+}
+
+.texto-sobre .email p {
+    padding: 0;
+}
+
+.texto-sobre .email span {
+    font-weight: 600;
+    color: white;
 }
 
 .foto-sobre img {
@@ -193,7 +225,7 @@ section.sobre {
 }
 
 .projetos h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     padding: 2rem 0;
 }
 

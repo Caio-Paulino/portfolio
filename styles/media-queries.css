@@ -4,30 +4,57 @@
 
 @media (max-width:768px) {
 
-    #burguer {
+    .menu-mobile {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: var(--preto-alternativo);
         display: block;
-        width: 4rem;
+        height: 100vh;
+        width: 0%;
+        overflow: hidden;
+        z-index: 1000;
+        transition: .4s;
+    }
+
+    .menu-mobile.abrir-menu {
+        width: 70%;
+    }
+
+    #navbar-mobile {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding-top: 1rem;
+    }
+
+    #navbar-mobile a {
+        font-size: 1.6rem;
+        padding: 2rem 5%;
+    }
+
+    #btn-menu {
+        display: block;
+    }
+
+    .btn-abrir-menu i {        
+        font-size: 2.5rem;
+        color: var(--vermelho);
+        padding: 1rem .8rem;
+    }
+
+    .btn-fechar i {
+        font-size: 2.5rem;
+        color: var(--vermelho);
+        padding: 1rem 4%;
+    }
+
+    #navbar-desktop {
+        display: none;
     }
 
     header {
         justify-content: space-between;
-    }
-
-    .navbar {
-        position: absolute; 
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 0;
-        background: var(--preto);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 1.5rem;
-        margin: 3rem 0; 
     }
 
     section.inicio h1 {
@@ -46,6 +73,11 @@
         font-size: 1.1rem;
     }
 
+    .sobre .email {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
     .container-projetos {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -60,8 +92,6 @@
 }
 
 @media (max-width:664px) {
-
-    
 
     section.inicio {
         display: flex;
