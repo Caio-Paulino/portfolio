@@ -78,6 +78,19 @@
         gap: 1.2rem;
     }
 
+    section.sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.sobre h2 {
+        text-align: center;
+    }
+
+    .texto-sobre {
+        width: 75vw;
+    }
+
     .container-projetos {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -103,19 +116,6 @@
 
     .col-b {
         width: 35vw;
-    }
-
-    section.sobre {
-        display: flex;
-        flex-direction: column;
-    }
-
-    section.sobre h2 {
-        text-align: center;
-    }
-
-    .texto-sobre {
-        width: 75vw;
     }
 
     .projeto {
