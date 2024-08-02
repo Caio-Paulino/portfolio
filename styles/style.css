@@ -198,7 +198,6 @@ section.sobre {
 
     box-shadow: 0 0 1rem var(--vermelho);
     color: var(--preto-alternativo);
-    cursor: pointer;
 }
 
 .texto-sobre .email p {
@@ -211,7 +210,7 @@ section.sobre {
 }
 
 .foto-sobre img {
-    width: 35vw;
+    width: 28vw;
     border-radius: 50%;
 }
 
