@@ -165,5 +165,9 @@
     html {
         font-size: 60%;
     }
+
+    .foto-sobre img {
+        width: 40vw;
+    }
 }
 
